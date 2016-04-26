@@ -6,15 +6,18 @@ alias l="ls -al"
 alias ll="ls -l"
 alias la="ls -a"
 # for easy cd
-alias ...="../../"
-alias ....="../../../"
-alias .....="../../../../"
+alias -g ...="../../"
+alias -g ....="../../../"
+alias -g .....="../../../../"
 # for git
 alias ga="git add"
 alias gc="git commit"
 alias gst="git status"
 alias gp="git push"
 alias gco="git checkout"
+# suffix
+alias -s py="python"
+
 
 # fd - cd to selected directory
 fd() {
