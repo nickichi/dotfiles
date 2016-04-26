@@ -1,0 +1,23 @@
+# dein self
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+# theme
+#[[plugins]]
+#repo    = 'tomasr/molokai'
+#hook_post_update = '''
+#autocmd MyAutoCmd VimEnter * colorscheme molokai
+#ghlight Normal ctermbg=none
+'''
+
+# context
+[[plugins]] # カーソル位置のコンテキストに合わせてftを切り替える
+repo = 'osyo-manga/vim-precious'
+depends = ['context_filetype.vim']
+
+[[plugins]] # カーソル位置のコンテキストのftを判定するライブラリ
+repo = 'Shougo/context_filetype.vim'
+
+# line
+[[plugins]]
+repo = 'itchyny/lightline.vim'
