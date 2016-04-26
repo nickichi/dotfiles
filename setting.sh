@@ -1,4 +1,6 @@
 
+echo `pwd`
+
 # mkdir if not exists
 mkdir -p ~/.vim/rc
 
