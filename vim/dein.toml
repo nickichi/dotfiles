@@ -8,7 +8,7 @@ repo = 'Shougo/dein.vim'
 #hook_post_update = '''
 #autocmd MyAutoCmd VimEnter * colorscheme molokai
 #ghlight Normal ctermbg=none
-'''
+#'''
 
 # context
 [[plugins]] # カーソル位置のコンテキストに合わせてftを切り替える
@@ -21,3 +21,10 @@ repo = 'Shougo/context_filetype.vim'
 # line
 [[plugins]]
 repo = 'itchyny/lightline.vim'
+
+# easymotion
+[[plugins]]
+repo = 'Lokaltog/vim-easymotion'
+hook_post_update = '''
+map <Space> <Plug>(easymotion-s2)
+'''
