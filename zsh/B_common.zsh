@@ -10,4 +10,5 @@ export SAVEHIST=100000
 setopt hist_ignore_dups
 # 開始と終了を記録
 setopt EXTENDED_HISTORY
-
+# ビープ音うるせ
+setopt no_beep
