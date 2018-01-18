@@ -1,6 +1,8 @@
 # zsh alias file
 
 # alias
+# vim to nvim
+alias vim="nvim"
 # reload
 alias reload="source ~/.zshrc"
 # ls

@@ -1,5 +1,7 @@
 PATH=$PATH:/usr/local/bin:/usr/bin
 
+# VIM設定
+export XDG_CONFIG_HOME=~/.dotfiles
 # 履歴を保存する
 export HISTFILE=${HOME}/.zsh_history
 # メモリ履歴の件数

@@ -17,3 +17,11 @@ git clone https://github.com/nickichi/dotfiles.git ~/.dotfiles
 mv ~/.dotfiles/.zshrc ~/.zshrc
 zplug install
 source ~/.zshrc
+
+# neovim
+brew tap neovim/neovim
+brew install --HEAD neovim
+brew install python
+brew install python3
+pip2 install --user --upgrade neovim
+pip3 install --user --upgrade neovim
