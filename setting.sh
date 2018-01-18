@@ -1,10 +1,11 @@
 
 echo `pwd`
 
-# mkdir if not exists
-mkdir -p ~/.vim/rc
+# brew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# copy files
-cp vim/vimrc ~/.vimrc
-cp vim/dein.toml ~/.vim/rc/
-cp vim/dein_lazy.toml ~/.vim/rc/
+# moromoro
+brew install git
+brew install zsh
+brew install zplug
+brew install fzf

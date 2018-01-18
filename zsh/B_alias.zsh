@@ -1,6 +1,8 @@
 # zsh alias file
 
 # alias
+# reload
+alias reload="source ~/.zshrc"
 # ls
 alias l="ls -al"
 alias ll="ls -l"
@@ -31,6 +33,9 @@ fda() {
   local dir
   dir=$(find ${1:-.} -type d 2> /dev/null | fzf +m) && cd "$dir"
 }
+zle -N _fda fda
+bindkey '^j' _fda
+
 # fdr - cd to selected parent directory
 fdr() {
   local declare dirs=()
@@ -56,3 +61,11 @@ fvim() {
   [[ -n "$files" ]] && ${EDITOR:-vim} "${files[@]}"
   unset IFS
 }
+
+# select-history
+function select-history() {
+  BUFFER=$(history -n -r 1 | fzf --no-sort +m --query "$LBUFFER" --prompt="History > ")
+  CURSOR=$#BUFFER
+}
+zle -N select-history
+bindkey '^r' select-history
