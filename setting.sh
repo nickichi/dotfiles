@@ -25,3 +25,6 @@ brew install python
 brew install python3
 pip2 install --user --upgrade neovim
 pip3 install --user --upgrade neovim
+
+# node
+brew install nodebrew
