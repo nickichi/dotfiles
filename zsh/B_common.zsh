@@ -1,4 +1,6 @@
 PATH=$PATH:/usr/local/bin:/usr/bin
+# nodejs
+PATH=$PATH:${HOME}/.nodebrew/current/bin
 
 # VIM設定
 export XDG_CONFIG_HOME=${HOME}/.dotfiles
