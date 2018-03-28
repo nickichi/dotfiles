@@ -28,3 +28,6 @@ pip3 install --user --upgrade neovim
 
 # node
 brew install nodebrew
+mkdir -p ~/.nodebrew/src
+nodebrew install-binary latest
+brew install yarn --without-node
